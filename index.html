@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Co+ Healthcare</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#" class="logo"><img src="thumb6.jpg" background-color="blue" height="80"></a>
+      <ul>
+        <li> <a class="present" href="index.html">Home</a></li>
+        <li><a href="hospital.html">Hospital</a></li>
+        <li><a href="medicine.html">Medicine</a></li>
+        <li><a href="essentials.html">Essentials</a></li>
+        <li><a href="vaccine.html">Vaccine</a></li>
+
+     </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Win over Covid-19 <br>Get<span> Vaccinated</span></h2>
+        <p>With the spread of covid pandemic, be safe, get vaccinated as soon as possible. Co+ healthcare provides
+          you with medical help, healthcare facilities, ambulance and mask services at your doorstep.
+        Prevent yourself from going outside and get yourself vaccinated to make sure about
+        your and yours near and dear ones safety.
+      Its your responsibility. Take a step ahead..!!  </p>
+       <a href="#">Learn More</a>
+      </div>
+     <div class="imgBox">
+       <img src="thumb1.png" class="covid">
+       </div>
+     </div>
+    <ul class="thumb">
+      <li><img src="thumb1.png" onclick="imgSlider('image1.png'); changeCircleColor('#fbcfc9')" height="60"></li>
+      <li><img src="thumb2.png" onclick="imgSlider('image2.png'); changeCircleColor('#7dfe7d')" height="60"></li>
+      <li><img src="thumb10.png" onclick="imgSlider('thumb10.png'); changeCircleColor('#80ebd7')" height="60"></li>
+      <li><img src="thumb12.png" onclick="imgSlider('thumb12.png'); changeCircleColor('#Cc0f0f')" height="60"></li>
+    </ul>
+   </section>
+   <script type="text/javascript">
+     function imgSlider(anything){
+       document.querySelector('.covid').src = anything;
+     }
+
+     function changeCircleColor(color){
+       const circle = document.querySelector('.circle');
+       circle.style.background = color;
+
+     }
+   </script>
+   <div class="footer">
+     <div class="footer-content">
+
+
+
+     <div class="footer-section about">
+      <h1 class="name"> Co<span>+</span> HealthCare</h1>
+      <p>
+        Every Life is PRECIOUS..!! Let's save them from Covid-19.
+        Let's get vaccinated.Register yourself now and complete your doses.
+      </p>
+      <h4>----------------------------</h4>
+      <h4>Take the following precaution:</h4>
+      <h4>1. Wash your hand regularly.</h4>
+      <h4>2. Maintain Social Distancing.</h4>
+      <h4>3. Wear your mask.</h4>
+      <h4>4. Avoid Social Gatherings.</h4>
+
+      </div>
+     <div class="footer-section links">
+        <h1 class="name"> Services</h1>
+        <br>
+        <ul>
+          <a href="hospital.html">
+            <li>Hospital</li>
+          </a>
+          <a href="medicine.html">
+            <li>Medicine</li>
+          </a>
+          <a href="essentials.html">
+            <li>Essentials</li>
+          </a>
+          <a href="#">
+            <li>Vaccine</li>
+          </a>
+        </ul>
+     </div>
+
+     <div class="footer-section Contact-us">
+        <h1 class="name"> Helpline Numbers</h1>
+        <h3>Central covid helpline number:</h3>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i> &nbsp; 011-23978046</span>
+          <h3>Ambulance helpline number:</h3>
+           <h4><span><i class="fas fa-phone"></i> &nbsp; 102, 108</span>
+          </h4>
+        </div>
+     </div>
+     </div>
+
+     <div class="footer-bottom">
+        Co+ Healthcare- A HealthCare Initiative
+     </div>
+   </div>
+</body>
+</html>
